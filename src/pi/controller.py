@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import socket
 import sys
 import select
@@ -13,24 +15,28 @@ COMMANDS = ["STARTVIDEO", "STOPVIDEO",
             "STOP", "FORWARD", "REVERSE", 
             "LEFT", "RIGHT", "STRAIGHT"]
 
-address = ('', PORT)
-server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-server_socket.bind(address)
+def main(argv):
+    address = ('', PORT)
+    server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    server_socket.bind(address)
 
-print "Listening on port", PORT
-server_socket.listen(1)
+    print "Listening on port", PORT
+    server_socket.listen(1)
 
-conn, addr = server_socket.accept()
-print "Connection from", addr
+    conn, addr = server_socket.accept()
+    print "Connection from", addr
 
-while 1:
-    data = conn.recv(BUFFER_SIZE)
-    if not data: break
-    data = data.strip()
-    print "Received:", data
-    response = "OK" if data in COMMANDS else "BAD_COMMAND"
-    conn.sendall(response)
+    try:
+        while 1:
+            data = conn.recv(BUFFER_SIZE)
+            if not data: break
+            data = data.strip()
+            print "Received:", data
+            response = "OK" if data in COMMANDS else "BAD_COMMAND"
+            conn.sendall(response)
+    finally:
+        print "Stopping and straightening"
+        conn.close()
 
-print "Stopping and straightening"
-
-conn.close()
+if __name__ == "__main__":
+   main(sys.argv[1:])
