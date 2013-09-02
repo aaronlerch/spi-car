@@ -1,0 +1,374 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE32AD2217D51AC800134840 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE32AD2117D51AC800134840 /* Cocoa.framework */; };
+		EE32AD2417D51AC800134840 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE32AD2317D51AC800134840 /* MacRuby.framework */; };
+		EE32AD2D17D51AC800134840 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE32AD2B17D51AC800134840 /* InfoPlist.strings */; };
+		EE32AD2F17D51AC800134840 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE32AD2E17D51AC800134840 /* main.m */; };
+		EE32AD3417D51AC800134840 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE32AD3217D51AC800134840 /* MainMenu.xib */; };
+		EE32AD3717D51AC800134840 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = EE32AD3617D51AC800134840 /* rb_main.rb */; };
+		EE32AD3917D51AC800134840 /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = EE32AD3817D51AC800134840 /* AppDelegate.rb */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE32AD2617D51AC800134840 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE32AD1617D51AC800134840 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE32AD1D17D51AC800134840;
+			remoteInfo = "Spi-Car";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EE32AD1E17D51AC800134840 /* Spi-Car.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spi-Car.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE32AD2117D51AC800134840 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		EE32AD2317D51AC800134840 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
+		EE32AD2A17D51AC800134840 /* Spi-Car-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Spi-Car-Info.plist"; sourceTree = "<group>"; };
+		EE32AD2C17D51AC800134840 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EE32AD2E17D51AC800134840 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EE32AD3017D51AC800134840 /* Spi-Car-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Spi-Car-Prefix.pch"; sourceTree = "<group>"; };
+		EE32AD3317D51AC800134840 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		EE32AD3617D51AC800134840 /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
+		EE32AD3817D51AC800134840 /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE32AD1B17D51AC800134840 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE32AD2217D51AC800134840 /* Cocoa.framework in Frameworks */,
+				EE32AD2417D51AC800134840 /* MacRuby.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE32AD1517D51AC800134840 = {
+			isa = PBXGroup;
+			children = (
+				EE32AD2817D51AC800134840 /* Spi-Car */,
+				EE32AD2017D51AC800134840 /* Frameworks */,
+				EE32AD1F17D51AC800134840 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE32AD1F17D51AC800134840 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE32AD1E17D51AC800134840 /* Spi-Car.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE32AD2017D51AC800134840 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE32AD2117D51AC800134840 /* Cocoa.framework */,
+				EE32AD2317D51AC800134840 /* MacRuby.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE32AD2817D51AC800134840 /* Spi-Car */ = {
+			isa = PBXGroup;
+			children = (
+				EE32AD3817D51AC800134840 /* AppDelegate.rb */,
+				EE32AD3117D51AC800134840 /* Resources */,
+				EE32AD3517D51AC800134840 /* Other Sources */,
+				EE32AD2917D51AC800134840 /* Supporting Files */,
+			);
+			path = "Spi-Car";
+			sourceTree = "<group>";
+		};
+		EE32AD2917D51AC800134840 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE32AD2A17D51AC800134840 /* Spi-Car-Info.plist */,
+				EE32AD2B17D51AC800134840 /* InfoPlist.strings */,
+				EE32AD2E17D51AC800134840 /* main.m */,
+				EE32AD3017D51AC800134840 /* Spi-Car-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE32AD3117D51AC800134840 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EE32AD3217D51AC800134840 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		EE32AD3517D51AC800134840 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EE32AD3617D51AC800134840 /* rb_main.rb */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		EE32AD2517D51AC800134840 /* Deployment */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "--compile --embed";
+			buildConfigurationList = EE32AD3F17D51AC800134840 /* Build configuration list for PBXLegacyTarget "Deployment" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/macruby_deploy;
+			dependencies = (
+				EE32AD2717D51AC800134840 /* PBXTargetDependency */,
+			);
+			name = Deployment;
+			passBuildSettingsInEnvironment = 1;
+			productName = Deployment;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		EE32AD1D17D51AC800134840 /* Spi-Car */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE32AD3C17D51AC800134840 /* Build configuration list for PBXNativeTarget "Spi-Car" */;
+			buildPhases = (
+				EE32AD1A17D51AC800134840 /* Sources */,
+				EE32AD1B17D51AC800134840 /* Frameworks */,
+				EE32AD1C17D51AC800134840 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Spi-Car";
+			productName = "Spi-Car";
+			productReference = EE32AD1E17D51AC800134840 /* Spi-Car.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE32AD1617D51AC800134840 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Aaron Lerch";
+			};
+			buildConfigurationList = EE32AD1917D51AC800134840 /* Build configuration list for PBXProject "Spi-Car" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EE32AD1517D51AC800134840;
+			productRefGroup = EE32AD1F17D51AC800134840 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE32AD1D17D51AC800134840 /* Spi-Car */,
+				EE32AD2517D51AC800134840 /* Deployment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE32AD1C17D51AC800134840 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE32AD2D17D51AC800134840 /* InfoPlist.strings in Resources */,
+				EE32AD3417D51AC800134840 /* MainMenu.xib in Resources */,
+				EE32AD3717D51AC800134840 /* rb_main.rb in Resources */,
+				EE32AD3917D51AC800134840 /* AppDelegate.rb in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE32AD1A17D51AC800134840 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE32AD2F17D51AC800134840 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE32AD2717D51AC800134840 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE32AD1D17D51AC800134840 /* Spi-Car */;
+			targetProxy = EE32AD2617D51AC800134840 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EE32AD2B17D51AC800134840 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE32AD2C17D51AC800134840 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EE32AD3217D51AC800134840 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE32AD3317D51AC800134840 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE32AD3A17D51AC800134840 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		EE32AD3B17D51AC800134840 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EE32AD3D17D51AC800134840 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					/Library/Frameworks,
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Spi-Car/Spi-Car-Prefix.pch";
+				INFOPLIST_FILE = "Spi-Car/Spi-Car-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EE32AD3E17D51AC800134840 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					/Library/Frameworks,
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Spi-Car/Spi-Car-Prefix.pch";
+				INFOPLIST_FILE = "Spi-Car/Spi-Car-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EE32AD4017D51AC800134840 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		EE32AD4117D51AC800134840 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE32AD1917D51AC800134840 /* Build configuration list for PBXProject "Spi-Car" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE32AD3A17D51AC800134840 /* Debug */,
+				EE32AD3B17D51AC800134840 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE32AD3C17D51AC800134840 /* Build configuration list for PBXNativeTarget "Spi-Car" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE32AD3D17D51AC800134840 /* Debug */,
+				EE32AD3E17D51AC800134840 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE32AD3F17D51AC800134840 /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE32AD4017D51AC800134840 /* Debug */,
+				EE32AD4117D51AC800134840 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE32AD1617D51AC800134840 /* Project object */;
+}
