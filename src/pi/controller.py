@@ -9,7 +9,9 @@ except RuntimeError:
 
 PORT = 12000
 BUFFER_SIZE = 1024
-COMMANDS = ["STOP", "FORWARD", "REVERSE", "LEFT", "RIGHT", "STRAIGHT"]
+COMMANDS = ["STARTVIDEO", "STOPVIDEO", 
+            "STOP", "FORWARD", "REVERSE", 
+            "LEFT", "RIGHT", "STRAIGHT"]
 
 address = ('', PORT)
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -26,7 +28,9 @@ while 1:
     if not data: break
     data = data.strip()
     print "Received:", data
-    response = "OK" if data in COMMANDS else "BAD COMMAND"
+    response = "OK" if data in COMMANDS else "BAD_COMMAND"
     conn.sendall(response)
+
+print "Stopping and straightening"
 
 conn.close()

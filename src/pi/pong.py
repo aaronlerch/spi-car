@@ -1,7 +1,7 @@
 from socket import *
 import sys
 import select
-address = ('', 12101)
+address = ('', 12001)
 server_socket = socket(AF_INET, SOCK_DGRAM, IPPROTO_UDP)
 server_socket.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
 server_socket.bind(address)
