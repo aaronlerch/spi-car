@@ -30,9 +30,12 @@ def main(argv):
         while 1:
             data = conn.recv(BUFFER_SIZE)
             if not data: break
-            data = data.strip()
-            print "Received:", data
-            response = "OK" if data in COMMANDS else "BAD_COMMAND"
+            data = data.strip().upper()
+            if data in COMMANDS:
+                response = "OK"
+                print data
+            else:
+                response = "BAD_COMMAND"
             conn.sendall(response)
     finally:
         print "Stopping and straightening"
