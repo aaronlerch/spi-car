@@ -37,6 +37,8 @@ def main(argv):
             else:
                 response = "BAD_COMMAND"
             conn.sendall(response)
+    except KeyboardInterrupt:
+        pass
     finally:
         print "Stopping and straightening"
         conn.close()

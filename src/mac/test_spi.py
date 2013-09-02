@@ -11,7 +11,6 @@ COMMANDS = {
                 "d" : "RIGHT",
                 "w" : "FORWARD",
                 "s" : "REVERSE",
-                "x" : "STOP",
            }
 
 # All commands:
@@ -42,22 +41,15 @@ def main(argv):
     print "Connected. Issue commands!"
     
     try:
-        cmds = {
-                "a" : lambda: sys.stdout.write("LEFT"),
-                "d" : lambda: sys.stdout.write("RIGHT")
-               }
-
-        ch = getchar()
-        if cmds.has_key(ch):
-            cmds[ch]()
-
-        #cmd = raw_input().upper()
-        #while cmd != 'EXIT':
-        #    s.sendall(cmd)
-        #    data = s.recv(BUFFER_SIZE)
-        #    if not data: break
-        #    print data
-        #    cmd = raw_input().upper()
+        cmd = raw_input().upper()
+        while cmd != 'EXIT':
+            s.sendall(cmd)
+            data = s.recv(BUFFER_SIZE)
+            if not data: break
+            print data
+            cmd = raw_input().upper()
+    except KeyboardInterrupt:
+        pass
     finally:
         s.close()
         print "Disconnected"
